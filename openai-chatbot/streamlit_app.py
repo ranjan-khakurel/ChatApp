@@ -11,7 +11,8 @@ with st.sidebar:
     #openai.api_key="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"
     client = OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
-    api_key="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",
+    api_key=st.secrets['OPENAI_API_KEY'],
+        
     )
     st.success('Proceed to entering your prompt message!', icon='👉')
     # if 'OPENAI_API_KEY' in st.secrets:
