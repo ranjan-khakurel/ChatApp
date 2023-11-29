@@ -21,8 +21,12 @@ with st.sidebar:
     #         st.warning('Please enter your credentials!', icon='⚠️')
     #     else:
     #         st.success('Proceed to entering your prompt message!', icon='👉')
-svg_file_path_user = '/images/avatar.svg'
-svg_file_path_assistant = '/images/crownlogo.svg'
+
+path = os.path.dirname(__file__)
+#my_file = path+'/photo.png'
+svg_file_path_user = path+'/images/avatar.svg'
+svg_file_path_assistant = path+'/images/crownlogo.svg'
+
 
 
 # Read the contents of the SVG file into a string
