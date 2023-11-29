@@ -8,7 +8,7 @@ import os
 
 with st.sidebar:
     st.title('🤖💬 OpenAI Chatbot')
-    #openai.api_key="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"
+    #openai.api_key=""
     client = OpenAI(
     # defaults to os.environ.get("OPENAI_API_KEY")
     api_key=st.secrets['OPENAI_API_KEY'],
